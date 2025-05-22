@@ -1,12 +1,7 @@
 .banner {
-  position: fixed;
-  left: 50%;
-  bottom: 40px;
-  transform: translateX(-50%);
   width: 100%;
   text-align: center;
-  z-index: 10;
-  pointer-events: none;
+  margin: 32px 0 0 0;
 }
 
 .banner h1 {
