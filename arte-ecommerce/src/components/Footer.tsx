@@ -5,7 +5,22 @@ import logo from "../assets/logo.png";
 const Footer: React.FC = () => {
   return (
     <footer className="footer-novo">
-      <div className="footer-novo-container">
+      <div className="footer-novo-pontilhado">
+        {/* Faixa pontilhada colorida */}
+        <div className="pontinho azul" />
+        <div className="pontinho amarelo" />
+        <div className="pontinho rosa" />
+        <div className="pontinho verde" />
+        <div className="pontinho azul" />
+        <div className="pontinho amarelo" />
+        <div className="pontinho rosa" />
+        <div className="pontinho verde" />
+        <div className="pontinho azul" />
+        <div className="pontinho amarelo" />
+        <div className="pontinho rosa" />
+        <div className="pontinho verde" />
+      </div>
+      <div className="footer-novo-container footer-novo-row">
         <div className="footer-novo-logo">
           <img src={logo} alt="Logo Artê" />
         </div>
