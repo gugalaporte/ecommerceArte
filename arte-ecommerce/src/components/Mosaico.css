@@ -1,0 +1,31 @@
+.mosaico {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+}
+.mosaico-item {
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  background: #eee;
+}
+.mosaico-item img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.mosaico-item .relevo {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.mosaico-item:hover .relevo {
+  opacity: 1;
+} 
