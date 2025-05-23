@@ -146,7 +146,7 @@
 .footer-novo {
   background: #181818;
   color: #fff;
-  padding: 0 0 0 0;
+  padding-bottom: 32px;
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
@@ -229,9 +229,9 @@
   min-width: 160px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-left: 32px;
-  text-align: left;
+  text-align: center;
 }
 
 .footer-novo-social-icons {
@@ -247,7 +247,7 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: #232323;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -316,7 +316,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
+  gap: 88px;
   margin: 0 auto 8px auto;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -333,7 +333,13 @@
   margin-bottom: 8px;
 }
 
-.footer-novo-section ul, .footer-novo-section li {
+.footer-novo-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.footer-novo-section li {
   font-size: 0.95rem;
 }
 
@@ -343,7 +349,7 @@
   justify-content: center;
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 32px auto;
   padding: 8px 32px 0 32px;
   gap: 40px;
 }
@@ -353,8 +359,8 @@
   min-width: 160px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
+  align-items: center;
+  text-align: center;
   margin-right: 32px;
 }
 
@@ -368,6 +374,12 @@
   max-width: 165px;
   height: auto;
   display: block;
+}
+
+.footer-novo-contato p,
+.footer-novo-contato a {
+  margin-bottom: 2px;
+  margin-top: 0;
 }
 
 @media (max-width: 900px) {
