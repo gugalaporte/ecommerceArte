@@ -1,0 +1,104 @@
+.comunidade {
+  background: #ffe2ed;
+  padding: 48px 0 56px 0;
+  width: 100vw;
+}
+.comunidade h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+.comunidade h2 .rosa {
+  color: #ff4e7a;
+}
+.comunidade-mosaico {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.comunidade-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.comunidade-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+.comunidade-card-info {
+  padding: 16px 16px 0 16px;
+}
+.comunidade-card-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+.comunidade-card-autor {
+  font-size: 0.95rem;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.comunidade-card-comentarios {
+  color: #888;
+  font-size: 0.92rem;
+  margin-left: 8px;
+}
+.comunidade-card-destaque {
+  padding: 16px;
+  font-size: 1rem;
+  font-style: italic;
+  border-radius: 0 0 18px 18px;
+  margin-top: auto;
+}
+.comunidade-card-destaque.rosa {
+  background: #ffb6d5;
+  color: #222;
+}
+.comunidade-card-destaque.amarelo {
+  background: #fff9b2;
+  color: #222;
+}
+.comunidade-card-destaque.azul {
+  background: #c6eaff;
+  color: #222;
+}
+.comunidade-card-destaque-autor {
+  font-size: 0.95rem;
+  font-style: normal;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.icon-user {
+  font-size: 1.1em;
+}
+@media (max-width: 1100px) {
+  .comunidade-mosaico {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .comunidade-mosaico {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .comunidade h2 {
+    font-size: 1.3rem;
+  }
+} 
