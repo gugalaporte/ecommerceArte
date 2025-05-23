@@ -1,7 +1,9 @@
 .comunidade {
   background: #ffe2ed;
-  padding: 48px 0 56px 0;
+  padding: 650px 0 0 0;
   width: 100vw;
+  position: relative;
+  overflow: hidden;
 }
 .comunidade h2 {
   text-align: center;
@@ -87,6 +89,24 @@
 .icon-user {
   font-size: 1.1em;
 }
+.comunidade-onda {
+  width: 100%;
+  height: 60px;
+  pointer-events: none;
+}
+.comunidade-espaco-branco {
+  background: #fff;
+  width: 100vw;
+  height: 120px;
+}
+.comunidade-titulo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
 @media (max-width: 1100px) {
   .comunidade-mosaico {
     grid-template-columns: repeat(3, 1fr);
@@ -101,4 +121,33 @@
   .comunidade h2 {
     font-size: 1.3rem;
   }
+}
+.comunidade-inferior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 32px;
+  margin-top: 40px;
+}
+.comunidade-inferior h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.comunidade-botao {
+  background: #8a9422;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 16px 36px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.comunidade-botao:hover {
+  background: #6d751a;
 } 
