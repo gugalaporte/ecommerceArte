@@ -1,0 +1,48 @@
+.faixa-tudo-criar {
+  width: 100vw;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.faixa-onda {
+  width: 100vw;
+  height: 24px;
+  position: relative;
+  z-index: 2;
+  line-height: 0;
+}
+.faixa-onda-top {
+  top: 0;
+}
+.faixa-onda-bottom {
+  bottom: 0;
+}
+.faixa-tudo-criar-content {
+  width: 100vw;
+  background: #f3f0a1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0 32px 0;
+  z-index: 3;
+}
+.faixa-tudo-criar-content h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .faixa-tudo-criar-content h2 {
+    font-size: 1.3rem;
+  }
+  .faixa-tudo-criar-content {
+    padding: 18px 0 18px 0;
+  }
+} 
