@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Carrossel from "./components/Carrossel";
 import Banner from "./components/Banner";
 import Comunidade from "./components/Comunidade";
+import EscolhaHabilidadeSection from "./components/EscolhaHabilidadeSection";
 import FaixaFundoBranco from "./components/FaixaFundoBranco";
 import FaixaTudoParaCriar from "./components/FaixaTudoParaCriar";
 import FaqSection from "./components/FaqSection";
@@ -15,6 +16,7 @@ function App() {
         <Carrossel />
         <Banner />
         <Comunidade />
+        <EscolhaHabilidadeSection />
         <div style={{ position: 'relative', width: '100vw' }}>
           <FaixaFundoBranco />
           <div style={{ position: 'absolute', top: 0, left: 0, width: '100vw', zIndex: 2 }}>
