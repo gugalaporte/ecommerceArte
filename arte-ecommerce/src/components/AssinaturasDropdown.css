@@ -1,0 +1,71 @@
+.assinaturas-dropdown {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 100vw;
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  z-index: 1002;
+  padding: 32px 0 32px 0;
+  border-bottom: 1px solid #eaeaea;
+  border-radius: 0 0 16px 16px;
+}
+.assinaturas-dropdown > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+.assinaturas-col {
+  min-width: 220px;
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.assinaturas-titulo {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+.assinaturas-titulo.azul { color: #2bb3da; }
+.assinaturas-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.assinaturas-col li {
+  font-size: 1.18rem;
+  margin-bottom: 14px;
+  color: #222;
+  font-weight: 400;
+}
+.ver-tudo {
+  font-weight: 700;
+  color: #222;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1.18rem;
+}
+@media (max-width: 900px) {
+  .assinaturas-dropdown {
+    flex-direction: column;
+    padding: 12px 0 8px 0;
+    border-radius: 0 0 12px 12px;
+  }
+  .assinaturas-dropdown > div {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+  .assinaturas-col {
+    margin: 0 auto 18px auto;
+    min-width: 0;
+    max-width: 98vw;
+  }
+} 

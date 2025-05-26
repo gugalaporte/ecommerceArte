@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import logo from "../assets/logo.png";
 import ProdutosDropdown from "./ProdutosDropdown";
+import AssinaturasDropdown from "./AssinaturasDropdown";
 
 // SVG de carrinho simples e confiável
 const CartIcon = () => (
@@ -23,6 +24,7 @@ const SearchIcon = () => (
 // Componente Header
 const Header: React.FC = () => {
   const [showDropdown, setShowDropdown] = React.useState(false);
+  const [showAssinaturas, setShowAssinaturas] = React.useState(false);
 
   return (
     <header className="header">
@@ -43,11 +45,19 @@ const Header: React.FC = () => {
           <div
             onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
+            style={{ display: 'inline-block', position: 'relative' }}
           >
             <a href="#" className="menu-link">Produtos</a>
             {showDropdown && <ProdutosDropdown />}
           </div>
-          <a href="#">Assinaturas</a>
+          <div
+            onMouseEnter={() => setShowAssinaturas(true)}
+            onMouseLeave={() => setShowAssinaturas(false)}
+            style={{ display: 'inline-block', position: 'relative' }}
+          >
+            <a href="#" className="menu-link">Assinaturas</a>
+            {showAssinaturas && <AssinaturasDropdown />}
+          </div>
           <a href="#">Comunidade</a>
           <a href="#">Tutoriais</a>
           <a href="#">Fazer login</a>
