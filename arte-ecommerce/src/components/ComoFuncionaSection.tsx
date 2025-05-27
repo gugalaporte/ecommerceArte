@@ -5,7 +5,10 @@ const steps = [
   {
     color: "#d9437a",
     icon: (
-      <svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="none"/><path d="M32 38c-6 0-11-4.5-11-10s5-10 11-10 11 4.5 11 10-5 10-11 10zm0 0v4m-7 0h14" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/><path d="M24 28c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#fff" strokeWidth="2" strokeLinecap="round"/></svg>
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <circle cx="32" cy="26" r="10" stroke="#fff" strokeWidth="3" />
+        <path d="M16 52c0-8.8 7.2-16 16-16s16 7.2 16 16" stroke="#fff" strokeWidth="3" fill="none" />
+      </svg>
     ),
     text: "Escolha sua habilidade"
   },
