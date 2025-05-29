@@ -21,6 +21,13 @@ const SearchIcon = () => (
   </svg>
 );
 
+// SVG da setinha para baixo
+const DownArrowIcon = () => (
+  <svg className="down-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M6 9l6 6 6-6"/>
+  </svg>
+);
+
 // Componente Header
 const Header: React.FC = () => {
   const [showDropdown, setShowDropdown] = React.useState(false);
@@ -47,7 +54,10 @@ const Header: React.FC = () => {
             onMouseLeave={() => setShowDropdown(false)}
             className="nav-item"
           >
-            <a href="#" className="menu-link">Produtos</a>
+            <a href="#" className="menu-link">
+              Produtos
+              <DownArrowIcon />
+            </a>
             {showDropdown && <ProdutosDropdown />}
           </div>
           <div
@@ -55,7 +65,10 @@ const Header: React.FC = () => {
             onMouseLeave={() => setShowAssinaturas(false)}
             className="nav-item"
           >
-            <a href="#" className="menu-link">Assinaturas</a>
+            <a href="#" className="menu-link">
+              Assinaturas
+              <DownArrowIcon />
+            </a>
             {showAssinaturas && <AssinaturasDropdown />}
           </div>
           <div className="nav-item">
