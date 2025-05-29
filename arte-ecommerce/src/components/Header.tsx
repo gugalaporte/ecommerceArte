@@ -45,7 +45,7 @@ const Header: React.FC = () => {
           <div
             onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
-            style={{ display: 'inline-block', position: 'relative' }}
+            className="nav-item"
           >
             <a href="#" className="menu-link">Produtos</a>
             {showDropdown && <ProdutosDropdown />}
@@ -53,14 +53,20 @@ const Header: React.FC = () => {
           <div
             onMouseEnter={() => setShowAssinaturas(true)}
             onMouseLeave={() => setShowAssinaturas(false)}
-            style={{ display: 'inline-block', position: 'relative' }}
+            className="nav-item"
           >
             <a href="#" className="menu-link">Assinaturas</a>
             {showAssinaturas && <AssinaturasDropdown />}
           </div>
-          <a href="#" className="menu-link">Comunidade</a>
-          <a href="#" className="menu-link">Tutoriais</a>
-          <a href="#" className="menu-link">Fazer login</a>
+          <div className="nav-item">
+            <a href="#" className="menu-link">Comunidade</a>
+          </div>
+          <div className="nav-item">
+            <a href="#" className="menu-link">Tutoriais</a>
+          </div>
+          <div className="nav-item">
+            <a href="#" className="menu-link">Fazer login</a>
+          </div>
           <CartIcon />
         </nav>
       </div>
