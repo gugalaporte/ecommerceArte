@@ -69,71 +69,49 @@
   margin-left: auto;
 }
 
-/* Estilos base para todos os links no nav */
-.header__nav a,
-.header__nav .menu-link {
+.header__nav a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   position: relative;
   padding-bottom: 4px;
-  transition: all 0.3s ease;
 }
 
-/* Destaque no hover */
-.header__nav a:hover,
-.header__nav .menu-link:hover {
+.header__nav a:hover {
   color: #fff !important;
-  transform: translateY(-1px);
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
-/* Efeito de sublinhado pontilhado */
-.header__nav a::after,
-.header__nav .menu-link::after {
+.header__nav a::after {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: -4px;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 4px;
   opacity: 0;
   background: repeating-linear-gradient(
     to right,
     #29a3d6 0px,
-    #29a3d6 12px,
+    #29a3d6 6px,
+    transparent 6px,
     transparent 12px,
+    #ffe600 12px,
+    #ffe600 18px,
+    transparent 18px,
     transparent 24px,
-    #ffe600 24px,
-    #ffe600 36px,
+    #ff4e7a 24px,
+    #ff4e7a 30px,
+    transparent 30px,
     transparent 36px,
-    transparent 48px,
-    #ff4e7a 48px,
-    #ff4e7a 60px,
-    transparent 60px,
-    transparent 72px,
-    #b2c135 72px,
-    #b2c135 84px,
-    transparent 84px,
-    transparent 96px
+    #b2c135 36px,
+    #b2c135 42px,
+    transparent 42px,
+    transparent 48px
   );
   transition: opacity 0.3s ease;
-  background-size: 96px 2px;
-  animation: slide 2s linear infinite;
 }
 
-@keyframes slide {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 96px 0;
-  }
-}
-
-/* Mostra o sublinhado no hover */
-.header__nav a:hover::after,
-.header__nav .menu-link:hover::after {
+.header__nav a:hover::after {
   opacity: 1;
 }
 

@@ -58,9 +58,9 @@ const Header: React.FC = () => {
             <a href="#" className="menu-link">Assinaturas</a>
             {showAssinaturas && <AssinaturasDropdown />}
           </div>
-          <a href="#">Comunidade</a>
-          <a href="#">Tutoriais</a>
-          <a href="#">Fazer login</a>
+          <a href="#" className="menu-link">Comunidade</a>
+          <a href="#" className="menu-link">Tutoriais</a>
+          <a href="#" className="menu-link">Fazer login</a>
           <CartIcon />
         </nav>
       </div>
