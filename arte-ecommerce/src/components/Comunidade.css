@@ -1,6 +1,6 @@
 .comunidade {
   background: #ffe2ed;
-  padding: 650px 0 0 0;
+  padding: 180px 0 0 0;
   width: 100vw;
   position: relative;
   overflow: hidden;
@@ -10,18 +10,33 @@
   font-size: 2.6rem;
   font-weight: 700;
   color: #111;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   line-height: 1.2;
+  padding: 0 20px;
 }
 .comunidade h2 .rosa {
   color: #ff4e7a;
 }
-.comunidade-mosaico {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 32px;
+.comunidade-mosaico-container {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 40px 60px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+.comunidade-mosaico-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+.comunidade-mosaico {
+  display: flex;
+  white-space: nowrap;
+  /* Removido o gap para as imagens ficarem coladas */
+}
+.comunidade-mosaico img {
+  height: 500px;
+  object-fit: cover;
+  display: block;
 }
 .comunidade-card {
   background: #fff;
@@ -91,8 +106,10 @@
 }
 .comunidade-onda {
   width: 100%;
-  height: 60px;
-  pointer-events: none;
+  height: 80px;
+  position: absolute;
+  bottom: 120px;
+  left: 0;
 }
 .comunidade-espaco-branco {
   background: #fff;
@@ -107,38 +124,37 @@
   text-align: center;
   margin-bottom: 40px;
 }
-@media (max-width: 1100px) {
-  .comunidade-mosaico {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-}
-@media (max-width: 700px) {
-  .comunidade-mosaico {
-    grid-template-columns: 1fr;
-    gap: 16px;
+@media (max-width: 768px) {
+  .comunidade {
+    padding: 40px 0 0 0;
   }
   .comunidade h2 {
-    font-size: 1.3rem;
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+  .comunidade-mosaico-container {
+    padding: 0 20px;
+  }
+  .comunidade-mosaico img {
+    height: 400px;
+  }
+  .comunidade-inferior h3 {
+    font-size: 1.5rem;
   }
 }
 .comunidade-inferior {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  margin-bottom: 32px;
-  margin-top: 40px;
+  text-align: center;
+  padding: 90px 30px;
+  margin-top: -100px; /* Margin negativa para subir a seção mantendo a faixa rosa */
 }
 .comunidade-inferior h3 {
   font-size: 2rem;
   font-weight: 700;
   color: #111;
   margin-bottom: 24px;
-  text-align: center;
 }
 .comunidade-botao {
-  background: #8a9422;
+  background: #b2c135;
   color: #fff;
   font-size: 1.25rem;
   font-weight: 600;
@@ -146,8 +162,9 @@
   border-radius: 10px;
   padding: 16px 36px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s ease;
 }
 .comunidade-botao:hover {
-  background: #6d751a;
+  background: #95a12d;
+  transform: translateY(-2px);
 } 
