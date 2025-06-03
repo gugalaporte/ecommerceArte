@@ -1,6 +1,6 @@
 import React from "react";
 import "./EscolhaHabilidadeSection.css";
-import ComoFuncionaSection from "./ComoFuncionaSection";
+import ComoFunciona from "./ComoFunciona";
 import assinatura1 from "../assets/assinatura1.png";
 import assinatura2 from "../assets/assinatura2.png";
 import assinatura3 from "../assets/assinatura3.png";
@@ -31,7 +31,7 @@ const cards = [
 
 const EscolhaHabilidadeSection: React.FC = () => (
   <section className="habilidade-section">
-    <ComoFuncionaSection />
+    <ComoFunciona />
     <div className="footer-novo-pontilhado" />
     <h2 className="habilidade-titulo">Escolha sua Habilidade!</h2>
     <p className="habilidade-subtitulo">Temos diversos kits para cada um de acordo com suas habilidades! Escolha o Kit que você se enquadra e venha conhecer mais sobre as nossas assinaturas!</p>
