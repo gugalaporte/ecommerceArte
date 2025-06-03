@@ -1,8 +1,9 @@
 .comunidade {
-  background: #ffe2ed;
-  padding: 180px 0 0 0;
-  width: 100vw;
   position: relative;
+  width: 100vw;
+  background: #ffe8f1;
+  margin-top: 60px;
+  padding-top: 170px;
   overflow: hidden;
 }
 .comunidade h2 {
@@ -24,6 +25,8 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  position: relative;
+  z-index: 2;
 }
 .comunidade-mosaico-container::-webkit-scrollbar {
   display: none; /* Chrome/Safari */
