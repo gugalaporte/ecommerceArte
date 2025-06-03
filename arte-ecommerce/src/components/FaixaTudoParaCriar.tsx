@@ -7,6 +7,19 @@ import produto4 from "../assets/produto4.png";
 import produto5 from "../assets/produto5.png";
 
 const FaixaTudoParaCriar: React.FC = () => {
+  const getCategoriaClassName = (categoria: string) => {
+    switch (categoria) {
+      case "Linhas e fios":
+        return "categoria-linhas-fios";
+      case "Modelagem e Escultura":
+        return "categoria-modelagem-escultura";
+      case "Pintura e Ilustração":
+        return "categoria-pintura-ilustracao";
+      default:
+        return "";
+    }
+  };
+
   const produtos = [
     {
       imagem: produto1,
@@ -70,7 +83,9 @@ const FaixaTudoParaCriar: React.FC = () => {
               <img src={produto.imagem} alt={produto.nome} className="produto-imagem" />
               <h3>{produto.nome}</h3>
               <span className="produto-preco">{produto.preco}</span>
-              <span className="produto-categoria">{produto.categoria}</span>
+              <span className={`produto-categoria ${getCategoriaClassName(produto.categoria)}`}>
+                {produto.categoria}
+              </span>
               <p className="produto-descricao">{produto.descricao}</p>
               <div className="produto-botoes">
                 <button className="btn-comprar">Comprar</button>

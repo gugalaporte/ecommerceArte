@@ -47,14 +47,16 @@
   margin-top: -40px;
   position: relative;
   z-index: 1;
+  display: flex;
+  justify-content: center;
 }
 .produtos-container {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 20px;
-  width: 90%;
   max-width: 1400px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 20px 40px;
   margin: 0 auto;
   scrollbar-width: thin;
   scrollbar-color: #666 #fff8d4;
@@ -105,11 +107,19 @@
 }
 .produto-categoria {
   font-size: 0.9rem;
-  color: #666;
-  background: #f5f5f5;
+  color: white;
   padding: 4px 12px;
   border-radius: 12px;
   margin-bottom: 12px;
+}
+.categoria-linhas-fios {
+  background: #E84E7B;
+}
+.categoria-modelagem-escultura {
+  background: #899a34;
+}
+.categoria-pintura-ilustracao {
+  background: #2998c5;
 }
 .produto-descricao {
   font-size: 0.95rem;
@@ -152,7 +162,7 @@
     font-size: 1.8rem;
   }
   .produtos-container {
-    padding: 12px;
+    padding: 12px 20px;
     gap: 12px;
   }
   .produto-card {
