@@ -18,12 +18,12 @@
   color: #ff4e7a;
 }
 .comunidade-mosaico-container {
-  max-width: 1400px;
+  width: 90%;
   margin: 0 auto;
-  padding: 0 40px 60px;
+  padding: 0 0 60px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 .comunidade-mosaico-container::-webkit-scrollbar {
   display: none; /* Chrome/Safari */
@@ -31,10 +31,9 @@
 .comunidade-mosaico {
   display: flex;
   white-space: nowrap;
-  /* Removido o gap para as imagens ficarem coladas */
 }
 .comunidade-mosaico img {
-  height: 500px;
+  height: 600px;
   object-fit: cover;
   display: block;
 }
@@ -133,7 +132,7 @@
     padding: 0 20px;
   }
   .comunidade-mosaico-container {
-    padding: 0 20px;
+    width: 94%;
   }
   .comunidade-mosaico img {
     height: 400px;
