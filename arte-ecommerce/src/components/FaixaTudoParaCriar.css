@@ -43,21 +43,18 @@
 .faixa-produtos {
   width: 100vw;
   background: #fff8d4;
-  padding: 40px 0;
+  padding: 40px 60px;
   margin-top: -40px;
   position: relative;
   z-index: 1;
-  display: flex;
-  justify-content: center;
 }
 .produtos-container {
-  max-width: 1400px;
-  width: 100%;
   display: flex;
   gap: 40px;
   overflow-x: auto;
-  padding: 20px 40px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
   scrollbar-width: thin;
   scrollbar-color: #666 #fff8d4;
 }
@@ -161,8 +158,11 @@
   .faixa-titulo-content h2 {
     font-size: 1.8rem;
   }
+  .faixa-produtos {
+    padding: 40px 8px;
+  }
   .produtos-container {
-    padding: 12px 20px;
+    padding: 12px 0;
     gap: 12px;
   }
   .produto-card {
