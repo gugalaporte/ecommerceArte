@@ -21,7 +21,7 @@
 }
 .mosaico-item .relevo {
   position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
+  top: -5%; left: -5%; width: 109%; height: 109%;
   opacity: 0;
   transition: opacity 0.3s;
   pointer-events: none;
