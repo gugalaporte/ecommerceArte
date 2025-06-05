@@ -1,6 +1,25 @@
 import React, { useState } from "react";
 import "./FaqSection.css";
 
+const ArrowIcon = ({ isOpen }: { isOpen: boolean }) => (
+  <svg 
+    width="14" 
+    height="10" 
+    viewBox="0 0 14 10" 
+    fill="none" 
+    className={`faq-arrow ${isOpen ? 'open' : ''}`}
+  >
+    <path 
+      d="M1 2L7 8L13 2" 
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      fill="none"
+    />
+  </svg>
+);
+
 const faqs = [
   {
     question: "A Artê é só para quem já tem experiência com atividades manuais?",
@@ -44,7 +63,7 @@ const FaqSection: React.FC = () => {
         {faqs.map((faq, idx) => (
           <div key={idx} className="faq-item">
             <button className="faq-question" onClick={() => toggle(idx)}>
-              <span className="faq-arrow">{openIndex === idx ? "\u25BC" : "\u25B6"}</span>
+              <ArrowIcon isOpen={openIndex === idx} />
               {faq.question}
             </button>
             {openIndex === idx && (
