@@ -1,8 +1,8 @@
 import React from "react";
 import "./Header.css";
 import logo from "../assets/logo.png";
-import ProdutosDropdown from "./ProdutosDropdown";
-import AssinaturasDropdown from "./AssinaturasDropdown";
+import ProdutosDropdown from "../LandPage/ProdutosDropdown";
+import AssinaturasDropdown from "../LandPage/AssinaturasDropdown";
 
 // SVG de carrinho simples e confiável
 const CartIcon = () => (

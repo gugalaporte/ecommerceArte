@@ -1,6 +1,6 @@
 import React from "react";
 import "./Banner.css";
-import Mosaico from "./Mosaico";
+import Mosaico from "../LandPage/Mosaico";
 
 const Banner: React.FC = () => {
   return (
